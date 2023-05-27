@@ -14,10 +14,6 @@ const lightbox = new SimpleLightbox('.gallery a', {
   overlayOpacity: 0.9,
   closeText: '&#10007;',
 });
-const decorTitleEl = document.querySelector(
-  '.sl-wrapper .sl-image .sl-caption '
-);
-decorTitleEl.style.backgroundColor = 'rgb(107, 79, 133, 0.7)';
 
 function murkup(gallery) {
   return gallery
