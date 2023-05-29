@@ -1,8 +1,8 @@
 .sl-wrapper .sl-image .sl-caption {
 	text-align: center;
-	background-color: rgb(107, 79, 133, 0.7);
+	background-color: rgba(107, 79, 133, 0.702);
 	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 4px -3px 16px 0px rgba(111, 15, 115, 0.3),
-		0px 0px 11px 0px rgba(20, 1, 135, 0.85);
+		0px 0px 11px 0px rgba(20, 1, 135, 0.851);
 }
