@@ -5,7 +5,7 @@ const timeStart = localStorage.getItem('videoplayer-current-time') ?? 0;
 const player = new Player('vimeo-player', {
 });
 
-player
+player    
   .setCurrentTime(Number(timeStart))
   .then(function (seconds) {
   console.log('Time start:', seconds);  // seconds = the actual time that the player seeked to
@@ -35,5 +35,8 @@ player.on(
 );
 
 player.getVideoTitle().then(function (title) {
-  console.log('title:', title);
+    console.log('title:', title);
+    console.log('Time reload: ', Number(timeStart));
+
 });
+
