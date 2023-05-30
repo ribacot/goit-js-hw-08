@@ -1,7 +1,7 @@
 import Player from '@vimeo/player';
 import throttle from 'lodash.throttle';
 
-const timeStart = localStorage.getItem('videoplayer-current-time') ?? 0;
+const timeStart = localStorage.getItem('videoplayer-current-time');
 const player = new Player('vimeo-player', {
 });
 
@@ -36,7 +36,7 @@ player.on(
 
 player.getVideoTitle().then(function (title) {
     console.log('title:', title);
-    console.log('Time reload: ', Number(timeStart));
+    console.log('Time reload: ', Number(timeStart)??0);
 
 });
 
